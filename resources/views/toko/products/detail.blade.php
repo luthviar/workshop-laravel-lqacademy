@@ -23,10 +23,10 @@
                 </p>
                      
                 <div class="d-flex">
-                    <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                    <a class="btn btn-outline-dark flex-shrink-0" href="https://wa.me/6287884187967?text={{$textForChatWa}}" target="_blank">
                         <i class="bi-cart-fill me-1"></i>
                         Beli
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

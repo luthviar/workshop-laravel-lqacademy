@@ -30,7 +30,8 @@ class ProductsController extends Controller
     //menampilkan detil produk
     public function show($id) {
         $dataProduct = Products::with('productCategories')->where('id',$id)->first();
-        return view('toko.products.detail')->with('product', $dataProduct);
+        $textForChatWa = 'Saya mau beli produk bernama: '. $dataProduct->name .', dengan harga: Rp'. number_format($dataProduct->price,0,',','.'); 
+        return view('toko.products.detail')->with('product', $dataProduct)->with('textForChatWa', $textForChatWa);
     }
 
     //menampilkan halaman membuat produk
